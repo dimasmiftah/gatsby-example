@@ -6,5 +6,28 @@
 
 module.exports = {
   /* Your site config here */
-  plugins: [],
+  siteMetadata: {
+    title: "Gatsby Tutorial",
+    description: "some random description",
+    author: "Dimas",
+    data: ["item 1", "item 2"],
+    person: { name: "Hinata", age: 15 },
+  },
+  plugins: [
+    `gatsby-plugin-styled-components`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/src/images/`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `texts`,
+        path: `${__dirname}/src/texts/`,
+      },
+    },
+  ],
 }
