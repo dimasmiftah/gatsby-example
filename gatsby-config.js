@@ -31,5 +31,13 @@ module.exports = {
         path: `${__dirname}/src/texts/`,
       },
     },
+    {
+      resolve: `gatsby-source-contentful`,
+      options: {
+        spaceId: `3ibhmr1zv2us`,
+        // Learn about environment variables: https://gatsby.dev/env-vars
+        accessToken: `NZL6rBv1lMclpjv1uqKkhRc3XohWfgCCEqVy3exshZo`,
+      },
+    },
   ],
 }

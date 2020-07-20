@@ -1,9 +1,33 @@
 .page {
-  padding: 20px;
-  border-radius: 10px;
-  border: 1px solid darkorange;
+  width: 90vw;
+  max-width: 1170px;
+  text-transform: capitalize;
+  margin: 0 auto;
 }
 
-.text {
-  color: darkorange;
+.page span {
+  margin-left: 3rem;
+  color: gray;
+}
+
+.page article {
+  margin: 2rem 0;
+}
+
+.page div {
+  height: 20rem;
+}
+
+@media screen and (min-width: 768px) {
+  .page {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .page {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
