@@ -4,7 +4,14 @@ import Layout from "../components/Layout"
 const Home = () => {
   return (
     <Layout>
-      <h1>Hello world!</h1>
+      <div
+        style={{
+          padding: "20px",
+          border: "1px solid",
+        }}
+      >
+        <h1>Hello world!</h1>
+      </div>
     </Layout>
   )
 }
