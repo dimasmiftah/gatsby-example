@@ -18,7 +18,7 @@ const product = ({ data }) => {
               <h3>
                 {product.title} <span>${product.price}</span>
               </h3>
-              <Link to={`products/` + product.slug}>More details</Link>
+              <Link to={`/products/` + product.slug}>More details</Link>
             </article>
           )
         })}
