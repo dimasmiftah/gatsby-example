@@ -43,6 +43,17 @@ a {
   }
 }
 
+.single-product {
+  width: 90vw;
+  max-width: 1170px;
+  margin: 2rem auto;
+}
+
+.single-product h1,
+.title {
+  text-transform: capitalize;
+}
+
 @media screen and (min-width: 768px) {
   .single-product {
     display: grid;
