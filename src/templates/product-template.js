@@ -16,7 +16,7 @@ const productTemplate = ({
   return (
     <Layout>
       <div style={{ textAlign: "center" }}>
-        <Link to="/products">back to product</Link>
+        <Link to="/products">Back to product</Link>
         <h1 className="title">Single Products: {title}</h1>
       </div>
       <section className="single-product">
